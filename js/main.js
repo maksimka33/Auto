@@ -34,3 +34,28 @@ $(document).ready(function(){
     $('.testimonial__slider').slick('slickNext')
   })
 });
+
+  // $('.faq__accordeon-link').on('click', function(e) {
+  //   e.preventDefault()
+  //   if ($(this).hasClass('faq__accordeon-link--active')) {
+  //     $(this).removeClass('faq__accordeon-link--active')
+  //     $(this).children('.faq__accordeon-text').slideUp()
+  //   } else {
+  //     $('.faq__accordeon-link').removeClass('faq__accordeon-link--active')
+  //     $('.faq__accordeon-text').slideUp()
+  //     $(this).addClass('faq__accordeon-link--active')
+  //     $(this).children('.faq__accordeon-text').slideDown()
+  //   }
+  // })
+$('.question__acc-link').on('click', function(e) {
+  e.preventDefault()
+  if ($(this).hasClass('question__acc-link--active')) {
+      $(this).removeClass('question__acc-link--active')
+      $(this).children('.question__acc-desc').slideUp()
+    } else {
+      $('.question__acc-link').removeClass('question__acc-link--active')
+      $('.question__acc-desc').slideUp()
+      $(this).addClass('question__acc-link--active')
+      $(this).children('.question__acc-desc').slideDown()
+    }
+})
