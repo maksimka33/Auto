@@ -18,31 +18,37 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+
+    <header class="header" id="home">
       <div class="container">
         <div class="header__top">
-          <a class="header__logo" href="#!">
+          <a class="header__logo" href="#home">
             <img src="./img/logo.svg" alt="Logo">
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-list-item">
-                <a href="#!" class="header__nav-link">Home</a>
+                <a href="#home" class="header__nav-link">Home</a>
               </li>
               <li class="header__nav-list-item">
-                <a href="#!" class="header__nav-link">About us</a>
+                <a href="#about" class="header__nav-link">About us</a>
               </li>
               <li class="header__nav-list-item">
-                <a href="#!" class="header__nav-link">Services</a>
+                <a href="#service" class="header__nav-link">Services</a>
               </li>
               <li class="header__nav-list-item">
-                <a href="#!" class="header__nav-link">Blog</a>
+                <a href="#blog" class="header__nav-link">Blog</a>
               </li>
               <li class="header__nav-list-item">
-                <a href="#!" class="header__nav-link">Contact</a>
+                <a href="#contact-us" class="header__nav-link">Contact</a>
               </li>
             </ul>
           </nav>
+
+          <div class="header__nav-icon">
+            <div class="header__nav-button">
+            </div>
+          </div>
           <a class="header__assistanse assistanse-hover" href="tel:18002652452">
             <div class="header__assistanse-title">Road Assistance</div>
             <div class="header__assistanse-tel">1800 265 24 52</div>
@@ -54,7 +60,7 @@
               Get your vehicle service done online at one place
             </div>
             <div class="header__content-buttons">
-              <a class="header__content-btn button">Book a service</a>
+              <a class="header__content-btn button" href="#contact-us">Book a service</a>
               <a class="header__play-btn" href="https://youtu.be/VAZY2V1Diak" data-fancybox>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_b_703_93)">
@@ -115,7 +121,7 @@
 
     <main class="main">
 
-      <section class="offer">
+      <section class="offer none" id="service">
         <div class="container">
           <header class="offer__header">
             <p class="offer__subtitle">What we Offer</p>
@@ -255,7 +261,7 @@
         </div>
       </section>
 
-      <section class="process">
+      <section class="process none" id="about">
         <div class="container">
           <div class="proces__body">
             <div class="proces__content">
@@ -294,7 +300,7 @@
                 </div>
                 <div class="proces__step-content">
                   <div class="proces__step-title">
-                    Get a Quote
+                    Book an Appointment
                   </div>
                   <div class="proces__step-text">
                     Through True Rich Attended does no end it his mother since real had half every.
@@ -304,12 +310,12 @@
               <div class="proces__step-item">
                 <div class="proces__step-img">
                   <div class="proces__step-numder">
-                    <img src="./img/step-icons/02.svg" alt="Step number">
+                    <img src="./img/step-icons/03.svg" alt="Step number">
                   </div>
                 </div>
                 <div class="proces__step-content">
                   <div class="proces__step-title">
-                    Get a Quote
+                    Get your Service Done
                   </div>
                   <div class="proces__step-text">
                     Through True Rich Attended does no end it his mother since real had half every.
@@ -321,20 +327,20 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta none">
         <div class="container">
           <div class="section-cta__content">
             <div class="section-cta__title">
               Get in touch with us for your service related query
             </div>
             <div class="section-cta__btn button button--black">
-              <a href="#!">Contact Us</a>
+              <a href="#contact-us">Contact Us</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="experience">
+      <section class="experience none">
         <div class="container">
           <div class="experience__row">
             <div class="experience__item">
@@ -373,7 +379,7 @@
         </div>
       </section>
 
-      <section class="brands">
+      <section class="brands none">
         <div class="container">
           <div class="brands__header">
             <h4 class="brands__title">
@@ -606,7 +612,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog none" id="blog">
         <div class="container">
           <div class="blog__title title">Our blog</div>
           <div class="blog__body">
@@ -692,7 +698,7 @@
         </div>
       </section>
 
-      <section class="testimonial">
+      <section class="testimonial none">
         <div class="container">
           <div class="testimonial__header">
             <h2 class="testimonial__title title">Our customers say the nicest things about our service</h2>
@@ -808,7 +814,7 @@
           </div>
       </section>
 
-      <section class="questions">
+      <section class="questions none">
         <div class="container">
           <div class="questions__header">
             <h2 class="questions__header-title title">
@@ -900,7 +906,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts none" id="contact-us">
         <div class="container">
           <div class="contacts__header">
             <h2 class="contacts__header-title title">
@@ -951,9 +957,9 @@
         </div>
       </section>
 
-
     </main>
-    <footer class="footer">
+
+    <footer class="footer none">
       <div class="footer__img"></div>
       <div class="footer__top">
         <div class="container">
@@ -1039,25 +1045,25 @@
       <div class="footer__bottom">
         <div class="container">
           <div class="footer__row-bottom">
-            <a class="footer__logo" href="#!">
+            <a class="footer__logo" href="#home">
               <img src="./img/footer/footer-logo.svg" alt="Logo">
             </a>
             <div class="footer__nav">
               <ul class="footer__nav-list">
                 <li class="footer__nav-item">
-                  <a href="#!" class="footer__nav-link">Home</a>
+                  <a href="#home" class="footer__nav-link">Home</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#!" class="footer__nav-link">About us</a>
+                  <a href="#about" class="footer__nav-link">About us</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#!" class="footer__nav-link">Services</a>
+                  <a href="#service" class="footer__nav-link">Services</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#!" class="footer__nav-link">Blog</a>
+                  <a href="#blog" class="footer__nav-link">Blog</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#!" class="footer__nav-link">Contact us</a>
+                  <a href="#contact-us" class="footer__nav-link">Contact us</a>
                 </li>
               </ul>
             </div>

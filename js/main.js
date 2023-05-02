@@ -63,3 +63,7 @@ function init() {
   map.controls.remove('rulerControl'); // удаляем контрол правил
 }
 ymaps.ready(init);
+
+document.querySelector('.header__nav-icon').addEventListener('click', function () {
+  document.querySelector('.header__nav-button').classList.toggle('active')
+})
