@@ -65,5 +65,28 @@ function init() {
 ymaps.ready(init);
 
 document.querySelector('.header__nav-icon').addEventListener('click', function () {
-  document.querySelector('.header__nav-button').classList.toggle('active')
+    this.classList.toggle('header__nav-icon--active');
 })
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+// const navIcon = document.querySelector('.header__nav-icon');
+// const nav = document.querySelector('.nav');
+
+// navIcon.addEventListener('click', function () {
+// 	this.classList.toggle('header__nav-icon--active');
+// 	nav.classList.toggle('nav--active');
+// });
+
+// // Находим ссылки внутри мобильной навигации
+// const navLinks = document.querySelectorAll('.nav a');
+
+// // Обходим ссылки методом forEach
+// navLinks.forEach(function (item) {
+// 	// Для каждой ссылки добавляем прослушку по событию "Клик"
+// 	item.addEventListener('click', function () {
+// 		navIcon.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
+// 		nav.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
+// 	})
+// })
