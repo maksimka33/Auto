@@ -7,10 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.none {
-  display: none !important;
-}
-
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -58,12 +54,13 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
-  margin-bottom: 96px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  margin-bottom: 80px;
 }
 
 .header__logo {
-  margin-right: 15px;
+  margin: 17px 0px 15px 0px;
 }
 
 .header__nav {
@@ -84,7 +81,6 @@ html {
   line-height: 1.75;
   white-space: nowrap;
   cursor: pointer;
-
   transition: color 0.3s ease-in, text-decoration 0.3s ease-in;
 }
 
@@ -143,13 +139,19 @@ html {
   top: 8px;
 }
 
+.header__nav-icon.header__nav-icon--active {
+  position: fixed;
+  top: 18px;
+  right: 10px;
+  z-index: 999;
+}
+
 .header__nav-icon.header__nav-icon--active .header__nav-icon-middle {
   background: transparent;
 }
 .header__nav-icon.header__nav-icon--active .header__nav-icon-middle::before, 
 .header__nav-icon.header__nav-icon--active .header__nav-icon-middle::after {
   top: 0;
-
 }
 .header__nav-icon.header__nav-icon--active .header__nav-icon-middle::before {
   transform: rotate(45deg);
@@ -159,10 +161,6 @@ html {
   transform: rotate(-45deg);
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
-
-/* -------------------------------------------------------- */
-
-/* -------------------------------------------------------- */
 
 .header__assistanse {
   position: relative;
@@ -275,10 +273,8 @@ html {
 }
 
 .header__img {
+  min-width: 605px;
   position: relative;
-  background: url("../img/header-img.jpg") no-repeat;
-  height: 632px;
-  width: 605px;
 }
 
 .header__img-service {
@@ -1214,20 +1210,12 @@ align-items: center;
 /* ====================== media ====================== */
 
 @media (max-width: 1299px) {
-  .container {
-    width: 900px;
-  }
-
   .header__nav-icon {
   display: flex;
 }
 
 .header__assistanse {
   display: none;
-}
-
-.header__nav {
-  /* display: none; */
 }
 
 .header__nav-list {
@@ -1243,6 +1231,8 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.3s ease-in;
 }
 
 .header__nav-list-item {
@@ -1250,5 +1240,10 @@ align-items: center;
   margin-top: 35px;
   font-size: 28px;
   color: #fff;
+}
+
+.header__nav-list--menu {
+  top: 0;
+  opacity: 0.95;
 }
 }
